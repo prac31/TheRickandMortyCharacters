@@ -21,6 +21,7 @@ An Android app built using Kotlin that showcases characters from the Rick and Mo
 - **RecyclerView**: For displaying the character list.
 
 ## Screenshots
-
-![Character List]()
-![Character Details](https://link_to_screenshot_2)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/aee72f70-6efd-439b-92bf-587fbda29bcd" width="300" />
+  <img src="https://github.com/user-attachments/assets/e4e134d8-876a-491b-be0b-c2b75252baab" width="300" />
+</p>
