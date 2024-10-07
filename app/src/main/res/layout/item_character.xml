@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivCharacter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/tvDescription"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/ivfavourite"
+        app:layout_constraintStart_toEndOf="@id/ivCharacter"
+        app:layout_constraintTop_toTopOf="@id/ivCharacter"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivfavourite"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginEnd="20dp"
+        app:srcCompat="@drawable/ic_student_empty_star"
+        app:layout_constraintTop_toTopOf="@id/tvName"
+        app:layout_constraintBottom_toBottomOf="@id/tvName"
+       app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/tvName"
+        app:layout_constraintBottom_toBottomOf="@id/ivCharacter"
+        app:layout_constraintStart_toStartOf="@id/tvName"
+        app:layout_constraintTop_toBottomOf="@id/tvName"/>
+
+    <View
+        android:id="@+id/divider_top"
+        android:background="@color/gray_light"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/ivCharacter"
+       app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
